@@ -18,4 +18,4 @@ python -m unittest discover -v
 pylint server.py EmotionDetection
 ```
 
-The `evidence/` directory contains the code and terminal-output captures requested by the Coursera rubric.
+The `evidence/` directory contains the code, terminal-output captures, and screenshots requested by the Coursera rubric. [`COURSERA_ANSWERS.md`](COURSERA_ANSWERS.md) provides the paste-ready answers for all 16 questions.

@@ -1,4 +1,4 @@
-PS> python -m unittest discover -v
+PS> python -m unittest test_emotion_detection -v
 test_anger (test_emotion_detection.TestEmotionDetector.test_anger)
 An angry sentence should be classified as anger. ... ok
 test_disgust (test_emotion_detection.TestEmotionDetector.test_disgust)

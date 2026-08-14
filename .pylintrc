@@ -1,0 +1,5 @@
+[MAIN]
+ignore-patterns=^EmotionDetection$
+
+[BASIC]
+good-names=app

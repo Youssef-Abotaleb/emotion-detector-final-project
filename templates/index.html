@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emotion Detector</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <main class="card">
+        <p class="eyebrow">IBM AI APPLICATION</p>
+        <h1>Emotion Detector</h1>
+        <p class="subtitle">Discover the emotions expressed in any English sentence.</p>
+        <label for="textToAnalyze">Text to analyze</label>
+        <textarea id="textToAnalyze" rows="5" placeholder="Example: I am so happy about this wonderful news!"></textarea>
+        <button id="analyzeButton" type="button" onclick="runEmotionDetection()">Run Emotion Detection</button>
+        <section id="result" aria-live="polite"></section>
+    </main>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

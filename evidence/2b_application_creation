@@ -1,0 +1,2 @@
+PS> python -c "from EmotionDetection.emotion_detection import emotion_detector; print('Application imported successfully')"
+Application imported successfully

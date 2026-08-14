@@ -1,0 +1,16 @@
+PS> python -m unittest discover -v
+test_anger (test_emotion_detection.TestEmotionDetector.test_anger)
+An angry sentence should be classified as anger. ... ok
+test_disgust (test_emotion_detection.TestEmotionDetector.test_disgust)
+A disgusted sentence should be classified as disgust. ... ok
+test_fear (test_emotion_detection.TestEmotionDetector.test_fear)
+A fearful sentence should be classified as fear. ... ok
+test_joy (test_emotion_detection.TestEmotionDetector.test_joy)
+A joyful sentence should be classified as joy. ... ok
+test_sadness (test_emotion_detection.TestEmotionDetector.test_sadness)
+A sad sentence should be classified as sadness. ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.003s
+
+OK

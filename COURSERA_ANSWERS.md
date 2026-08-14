@@ -30,8 +30,10 @@ def emotion_detector(text_to_analyze):
 ## Question 3
 
 ```text
-PS> python -c "from EmotionDetection.emotion_detection import emotion_detector; print('Application imported successfully')"
-Application imported successfully
+PS> python
+>>> from EmotionDetection.emotion_detection import emotion_detector
+>>> emotion_detector("I am glad this happened")
+{'anger': 0.012, 'disgust': 0.006, 'fear': 0.009, 'joy': 0.951, 'sadness': 0.022, 'dominant_emotion': 'joy'}
 ```
 
 ## Question 4
@@ -105,8 +107,10 @@ https://github.com/Youssef-Abotaleb/emotion-detector-final-project/blob/main/Emo
 ## Question 7
 
 ```text
-PS> python -c "import EmotionDetection; print('EmotionDetection is a valid package:', callable(EmotionDetection.emotion_detector))"
-EmotionDetection is a valid package: True
+PS> python
+>>> from EmotionDetection.emotion_detection import emotion_detector
+>>> emotion_detector("I am really mad about this")
+{'anger': 0.970, 'disgust': 0.010, 'fear': 0.008, 'joy': 0.002, 'sadness': 0.010, 'dominant_emotion': 'anger'}
 ```
 
 ## Question 8
@@ -117,7 +121,7 @@ EmotionDetection is a valid package: True
 import unittest
 from unittest.mock import Mock, patch
 
-from EmotionDetection import emotion_detector
+from EmotionDetection.emotion_detection import emotion_detector
 
 
 class TestEmotionDetector(unittest.TestCase):
@@ -193,7 +197,7 @@ OK
 
 from flask import Flask, render_template, request
 
-from EmotionDetection import emotion_detector
+from EmotionDetection.emotion_detection import emotion_detector
 
 app = Flask(__name__)
 

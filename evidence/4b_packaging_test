@@ -1,2 +1,4 @@
-PS> python -c "import EmotionDetection; print('EmotionDetection is a valid package:', callable(EmotionDetection.emotion_detector))"
-EmotionDetection is a valid package: True
+PS> python
+>>> from EmotionDetection.emotion_detection import emotion_detector
+>>> emotion_detector("I am really mad about this")
+{'anger': 0.970, 'disgust': 0.010, 'fear': 0.008, 'joy': 0.002, 'sadness': 0.010, 'dominant_emotion': 'anger'}

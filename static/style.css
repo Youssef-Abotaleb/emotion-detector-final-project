@@ -33,3 +33,15 @@ textarea:focus { outline: 3px solid #d6e5ff; border-color: #0f62fe; }
 button { width: 100%; margin-top: 16px; padding: 15px 20px; border: 0; border-radius: 12px; background: #0f62fe; color: white; font: inherit; font-weight: 750; cursor: pointer; }
 button:hover { background: #0043ce; }
 #result { min-height: 68px; margin-top: 24px; padding: 18px; border-radius: 12px; background: #f2f6ff; line-height: 1.6; }
+
+@media (max-width: 420px) {
+    body { padding: 8px; }
+    .card { padding: 16px; border-radius: 16px; }
+    .eyebrow { margin-bottom: 4px; font-size: 9px; }
+    h1 { font-size: 28px; }
+    .subtitle { margin: 4px 0 10px; font-size: 11px; }
+    label { margin-bottom: 4px; font-size: 11px; }
+    textarea { height: 48px; min-height: 48px; padding: 8px; font-size: 10px; }
+    button { margin-top: 6px; padding: 8px; font-size: 10px; }
+    #result { min-height: 32px; margin-top: 8px; padding: 8px; font-size: 9px; line-height: 1.35; }
+}
